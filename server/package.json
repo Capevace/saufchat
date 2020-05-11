@@ -1,0 +1,43 @@
+{
+	"name": "saufchat-server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"frontend": "node include-frontend.js",
+		"start": "tsc && node build/start",
+		"monitor": "nodemon start",
+		"test": "echo 'Successfully completed tests'",
+		"dev": "ts-node-dev --respawn --transpileOnly ./src/start.ts"
+	},
+	"engines": {
+		"node": "12.16.2",
+		"npm": "6.14.4"
+	},
+	"author": "Lukas Mateffy (@Capevace)",
+	"license": "MIT",
+	"dependencies": {
+		"@types/webpack-env": "^1.15.2",
+		"@types/node": "^13.13.5",
+		"@types/node-fetch": "^2.5.7",
+		"@types/socket.io": "^2.1.4",
+		"@types/sticky-cluster": "^0.3.1",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"cuid": "^2.1.8",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"node-fetch": "^2.6.0",
+		"peer": "^0.5.2",
+		"socket.io": "^2.3.0",
+		"socket.io-redis": "^5.2.0",
+		"sticky-cluster": "^0.3.5",
+		"winston": "^3.2.1"
+	},
+	"devDependencies": {
+		"ncp": "^2.0.0",
+		"nodemon": "^2.0.3",
+		"ts-node-dev": "^1.0.0-pre.44",
+		"typescript": "^3.8.3"
+	}
+}
